@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- customize style -->
+    <style>
+        .font-Lato {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-Lato">
+    <header>
+        <div class="container mx-auto px-8 lg:px-24 my-8">
+            <div class="navbar bg-[#F85559] rounded-full px-8">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="space-x-4 hidden lg:flex text-white text-xl font-semibold">
+                        <a href="#" class="hover:bg-red-500 p-2 rounded-lg">Home</a>
+                        <a href="#" class="hover:bg-red-500 p-2 rounded-lg">Shop</a>
+                        <a href="#" class="hover:bg-red-500 p-2 rounded-lg">Contact</a>
+                        <a href="#" class="hover:bg-red-500 p-2 rounded-lg">About</a>
+                    </div>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <img src="images/logo.png" alt="">
+                    <h6 class="ml-4 text-2xl font-semibold text-white">Fruit Burst</h6>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="bg-white hidden lg:flex items-center justify-center px-6 py-3 rounded-full">
+                        <input class="outline-none text-base opacity-50" type="text" placeholder="search">
+                        <i class="fa-solid fa-magnifying-glass text-[22px] cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="fruits_banner">
+            <div class="container mx-auto px-8 lg:px-24">
+                <div class="carousel w-full rounded-lg">
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(./images/banner1.png)] bg-no-repeat bg-center bg-cover h-[60vh] flex justify-center items-center">
+                        
+                        <div class="absolute top-5 right-5 cursor-pointer">
+                            <h3 class="text-white text-xl bg-[#F85559] px-6 py-3 rounded-lg">Hot Deal</h3>
+                        </div>
+
+                        <div class="space-y-5 text-center">
+                            <h1 class="text-3xl lg:text-7xl text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl w-2/3 mx-auto">We pack organic food ingredients for private labels within the food service market, offering full traceability.</p>
+                            <button class="btn bg-[#F85559] text-xl text-white hover:bg-[#00000066] duration-500 border-none">Shop
+                                Now</button>
+                        </div>
+
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <!-- <a href="#slide4" class="bg-transparent hover:bg-[rgba(0,0,0,0.4)] p-1 text-white text-2xl font-thin rounded-full border-none">❮</a> -->
+                            <a href="#slide4" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❮</a>
+                            <a href="#slide2" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(./images/banner2.png)] bg-no-repeat bg-center bg-cover h-[60vh] flex justify-center items-center">
+
+                        <div class="absolute top-5 right-5 cursor-pointer">
+                            <h3 class="text-white text-xl bg-[#F85559] px-6 py-3 rounded-lg">Hot Deal</h3>
+                        </div>
+
+                        <div class="space-y-5 text-center">
+                            <h1 class="text-3xl lg:text-7xl text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl w-2/3 mx-auto">We pack organic food ingredients for private labels within the food service market, offering full traceability.</p>
+                            <button class="btn bg-[#F85559] text-xl text-white hover:bg-[#00000066] duration-500 border-none">Shop
+                                Now</button>
+                        </div>
+
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <!-- <a href="#slide4" class="bg-transparent hover:bg-[rgba(0,0,0,0.4)] p-1 text-white text-2xl font-thin rounded-full border-none">❮</a> -->
+                            <a href="#slide1" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❮</a>
+                            <a href="#slide3" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(./images/banner3.png)] bg-no-repeat bg-center bg-cover h-[60vh] flex justify-center items-center">
+
+                        <div class="absolute top-5 right-5 cursor-pointer">
+                            <h3 class="text-white text-xl bg-[#F85559] px-6 py-3 rounded-lg">Hot Deal</h3>
+                        </div>
+
+                        <div class="space-y-5 text-center">
+                            <h1 class="text-3xl lg:text-7xl text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl w-2/3 mx-auto">We pack organic food ingredients for private labels within the food service market, offering full traceability.</p>
+                            <button class="btn bg-[#F85559] text-xl text-white hover:bg-[#00000066] duration-500 border-none">Shop
+                                Now</button>
+                        </div>
+
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <!-- <a href="#slide4" class="bg-transparent hover:bg-[rgba(0,0,0,0.4)] p-1 text-white text-2xl font-thin rounded-full border-none">❮</a> -->
+                            <a href="#slide2" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❮</a>
+                            <a href="#slide4" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(./images/banner4.png)] bg-no-repeat bg-center bg-cover h-[60vh] flex justify-center items-center">
+
+                        <div class="absolute top-5 right-5 cursor-pointer">
+                            <h3 class="text-white text-xl bg-[#F85559] px-6 py-3 rounded-lg">Hot Deal</h3>
+                        </div>
+
+                        <div class="space-y-5 text-center">
+                            <h1 class="text-3xl lg:text-7xl text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl w-2/3 mx-auto">We pack organic food ingredients for private labels within the food service market, offering full traceability.</p>
+                            <button class="btn bg-[#F85559] text-xl text-white hover:bg-[#00000066] duration-500 border-none">Shop
+                                Now</button>
+                        </div>
+
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <!-- <a href="#slide4" class="bg-transparent hover:bg-[rgba(0,0,0,0.4)] p-1 text-white text-2xl font-thin rounded-full border-none">❮</a> -->
+                            <a href="#slide3" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❮</a>
+                            <a href="#slide1" class="btn btn-circle hover:bg-[#00000066] hover:text-white">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="hidden h-[20vh] w-2/3 bg-white shadow-xl mx-auto -translate-y-24 rounded-lg lg:flex justify-center items-center">
+                    <div class="flex justify-center items-center space-x-5">
+                        <div class="text-center">
+                            <img src="./images/fruit1.png" alt="">
+                            <h4 class="text-base opacity-60">Cherry</h4>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/fruit2.png" alt="">
+                            <h4 class="text-base opacity-60">Orange</h4>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/fruit3.png" alt="">
+                            <h4 class="text-base opacity-60">Mango</h4>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/fruit4.png" alt="">
+                            <h4 class="text-base opacity-60">Strawberry</h4>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/fruit5.png" alt="">
+                            <h4 class="text-base opacity-60">Pomegranate</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container mx-auto px-8 lg:px-24 my-8">
+
+    </main>
+</body>
+
+</html>
